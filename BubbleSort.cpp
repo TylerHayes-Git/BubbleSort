@@ -9,47 +9,46 @@
    	 	cout << "Data items in original order:" << endl;
 
    		 for ( size_t i = 0; i < arraySize; ++i )
-    	{
-        	cout << setw(4) << arr[ i ];
-    	} // for i
+    		{
+        		cout << setw(4) << arr[ i ];
+    		} // for i
 
 		bool swapMade = true;
 		
-	if (swapMade == true){
+		if (swapMade == true){
 	
-    	for ( size_t pass = 0; pass < arraySize; ++pass )
-    	{	
-    		//cout << "\n\n----New Pass----------------------------";
-			swapMade = false;
+    			for ( size_t pass = 0; pass < arraySize; ++pass )
+    			{	
+				swapMade = false;
 			
-       		for ( size_t j = 0; j < arraySize - 1; ++j )
-        	{
-           		 if ( arr [ j ] > arr [ j + 1 ] )
-            	{
-                	hold = arr [ j ];
-                	arr [ j ] = arr [ j + 1 ];
-                	arr [ j + 1 ] = hold; 
+       				for ( size_t j = 0; j < arraySize - 1; ++j )
+        			{
+           		 		if ( arr [ j ] > arr [ j + 1 ] )
+            			{
+                			hold = arr [ j ];
+                			arr [ j ] = arr [ j + 1 ];
+                			arr [ j + 1 ] = hold; 
                 	
-                	cout << "\nSwap made:" << endl;
-                	for ( size_t i = 0; i < arraySize; ++i )
-    				{
-        				cout << setw(4) << arr[ i ];
-    				}
+                			cout << "\nSwap made:" << endl;
+                			for ( size_t i = 0; i < arraySize; ++i )
+    					{
+        					cout << setw(4) << arr[ i ];
+    					}
                 	
 					swapMade = true;
 					cout << "\n----New Pass----------------------------";
 					
-            	} // if
+            			} // if
             	
-            	else
+            			else
 				{
-            		swapMade = false;
-            		//cout << "\n(No swap)\n" << endl; //<----Was used to check computation
+            				swapMade = false;
+            				//cout << "\n(No swap)\n" << endl; //<----Was used to check computation
 				}
 
-        	} // for j
+        		} // for j
         	
-    	} // for pass
+    		} // for pass
 	}// if swapMade
 
     	cout << endl << "No swaps made.\n\nData items in ascending order:" << endl;
@@ -61,4 +60,4 @@
 
     	cout << endl;
     	
-	}// BubbleSort
+}// BubbleSort
