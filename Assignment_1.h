@@ -1,4 +1,4 @@
-//Assignment_1.h by Tyler Hayes
+//Assignment_1.h by Tyler Hayes 
 #include <iostream>
 #include <iomanip>
 
